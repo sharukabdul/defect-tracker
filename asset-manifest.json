@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/defect-tracker/static/css/main.0e2cdf46.css",
+    "main.js": "/defect-tracker/static/js/main.f787f7b3.js",
+    "index.html": "/defect-tracker/index.html",
+    "main.0e2cdf46.css.map": "/defect-tracker/static/css/main.0e2cdf46.css.map",
+    "main.f787f7b3.js.map": "/defect-tracker/static/js/main.f787f7b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e2cdf46.css",
+    "static/js/main.f787f7b3.js"
+  ]
+}

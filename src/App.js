@@ -1,6 +1,6 @@
 import './App.css';
 import Login from './components/login.jsx';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import AddDefect from './components/add-defect.jsx';
 import ViewDefects from './components/view-defects.jsx';
 import { useState } from 'react';
@@ -59,13 +59,13 @@ function App() {
   console.log(data);
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/add-defect" element={<AddDefect handleAddData={handleAddData} data={data} />} />
           <Route path="/view-defects" element={<ViewDefects data={data} handleCloseDefectProps={handleCloseDefectProps} />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

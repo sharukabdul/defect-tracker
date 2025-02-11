@@ -1,0 +1,129 @@
+.login-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.login-header {
+    background: #539dcb;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid grey;
+    padding: 1rem 4rem 10px;
+    border-radius: 5px;
+}
+
+.form-label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-label-container input {
+    height: 25px
+}
+
+.defect-tracker-title {
+    font-weight: 500 !important;
+}
+
+.defect-container {
+    border: 1px solid black;
+    max-width: 90%;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.defect-container.add {
+    max-width: 500px;
+    padding: 0rem;
+}
+
+.add-view-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5px;
+}
+
+.defect-container a {
+    text-decoration: none;
+    color: #539dcb;
+    font-size: 18px;
+}
+
+.defect-details {
+    padding-bottom: 0.5rem;
+}
+
+.defect-sub-header {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.filter-details-container {
+    border: 1px solid black;
+}
+
+.priority-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -1rem;
+}
+
+.search-results {
+    color: red;
+}
+
+th {
+    background-color: #539dcb;
+    padding: 10px;
+    color: #fff;
+}
+
+td {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+table {
+    border: none;
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+.no-action-pending {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: navajowhite;
+    text-align: center;
+    color: grey;
+}
+
+a {
+    cursor: pointer;
+}

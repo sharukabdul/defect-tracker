@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/defect-tracker/static/css/main.0e2cdf46.css",
-    "main.js": "/defect-tracker/static/js/main.c498caa4.js",
+    "main.css": "/defect-tracker/static/css/main.fbb06b6a.css",
+    "main.js": "/defect-tracker/static/js/main.4a05461a.js",
     "index.html": "/defect-tracker/index.html",
-    "main.0e2cdf46.css.map": "/defect-tracker/static/css/main.0e2cdf46.css.map",
-    "main.c498caa4.js.map": "/defect-tracker/static/js/main.c498caa4.js.map"
+    "main.fbb06b6a.css.map": "/defect-tracker/static/css/main.fbb06b6a.css.map",
+    "main.4a05461a.js.map": "/defect-tracker/static/js/main.4a05461a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e2cdf46.css",
-    "static/js/main.c498caa4.js"
+    "static/css/main.fbb06b6a.css",
+    "static/js/main.4a05461a.js"
   ]
 }

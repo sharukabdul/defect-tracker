@@ -6,6 +6,7 @@
     align-items: center;
     max-width: 500px;
     margin: auto;
+    margin-top: 1rem;
 }
 
 .login-header {
@@ -49,6 +50,8 @@
     max-width: 90%;
     margin: auto;
     padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .defect-container.add {
@@ -126,4 +129,45 @@ table {
 
 a {
     cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+    .login-container {
+        max-width: 340px !important;
+        overflow-x: hidden;
+    }
+
+    .form-container {
+        border: 0px solid
+    }
+
+    .defect-container {
+        max-width: 86%;
+    }
+
+    .defect-container.add {
+        max-width: 340px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        max-width: 400px;
+    }
+
+    .form-container {
+        border: 0px solid
+    }
+
+    .table-container {
+        overflow-x: overlay;
+    }
+
+    .defect-container.add {
+        max-width: 400px;
+    }
+
+    .form-container {
+        padding: 1rem 2rem 10px;
+    }
 }

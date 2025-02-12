@@ -44,36 +44,38 @@ export default function ViewDefects({ data, handleCloseDefectProps }) {
                 <h1 className="defect-sub-header">Defect Details</h1>
                 <span className="search-results">Search Results: {data.length}</span>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Defect Category</th>
-                        <th>Description</th>
-                        <th>Priority</th>
-                        <th>Status</th>
-                        <th>Change Status</th>
-                    </tr>
-                </thead>
-                {data.filter((item) => (category === "all" || item.status === category) && (priority === "all" || item.priority === priority)).map((defect) => {
-                    return (
-                        <tbody key={defect.id}>
-                            <tr>
-                                <td>{defect.defectCategory}</td>
-                                <td>{defect.description}</td>
-                                <td>{defect.priority}</td>
-                                <td>{defect.status}</td>
-                                <td>
-                                    {defect.changeStatus === "Close Defect" ? (
-                                        <a onClick={() => handleCloseDefect(defect.id)}>Close Defect</a>
-                                    ) : (
-                                        <span className="no-action-pending">{defect.changeStatus}</span>
-                                    )}
-                                </td>
-                            </tr>
-                        </tbody>
-                    );
-                })}
-            </table>
+            <div className="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Defect Category</th>
+                            <th>Description</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Change Status</th>
+                        </tr>
+                    </thead>
+                    {data.filter((item) => (category === "all" || item.status === category) && (priority === "all" || item.priority === priority)).map((defect) => {
+                        return (
+                            <tbody key={defect.id}>
+                                <tr>
+                                    <td>{defect.defectCategory}</td>
+                                    <td>{defect.description}</td>
+                                    <td>{defect.priority}</td>
+                                    <td>{defect.status}</td>
+                                    <td>
+                                        {defect.changeStatus === "Close Defect" ? (
+                                            <a onClick={() => handleCloseDefect(defect.id)}>Close Defect</a>
+                                        ) : (
+                                            <span className="no-action-pending">{defect.changeStatus}</span>
+                                        )}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        );
+                    })}
+                </table>
+            </div>
         </div>
     );
 }
